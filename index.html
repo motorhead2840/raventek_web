@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raventek | A New Age in Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.5);
+        }
+        body {
+            background-color: #050505;
+            color: #e5e7eb;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+        }
+        .animate-pulse-slow {
+            animation: pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+        }
+        .card-hover:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 20px var(--accent-glow);
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass border-b border-white/5 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-sm flex items-center justify-center rotate-45">
+                    <span class="text-white font-bold -rotate-45 text-lg">R</span>
+                </div>
+                <span class="text-xl font-bold tracking-tighter text-white font-heading">RAVENTEK</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide uppercase">
+                <a href="#about" class="hover:text-blue-400 transition-colors">Vision</a>
+                <a href="#specialties" class="hover:text-blue-400 transition-colors">Technology</a>
+                <a href="#hardware" class="hover:text-blue-400 transition-colors">Hardware</a>
+                <a href="#contact" class="px-5 py-2 bg-blue-600 rounded-full hover:bg-blue-700 transition-all">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 hero-gradient"></div>
+        <!-- Abstract Tech Elements -->
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-600/10 rounded-full blur-[120px] animate-pulse-slow"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] animate-pulse-slow"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 glass rounded-full border border-blue-500/30 text-blue-400 text-xs font-semibold tracking-widest uppercase">
+                Defining the Next Epoch
+            </div>
+            <h1 class="text-5xl md:text-8xl font-bold mb-6 tracking-tight leading-none">
+                A New Age in <br>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-400">Technology</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Raventek is built on innovation and vision, pioneering the fundamental shifts in computation and security that will define the 21st century.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <a href="#specialties" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all w-full md:w-auto">Explore Our Pillars</a>
+                <a href="#about" class="px-8 py-4 glass hover:bg-white/10 text-white font-semibold rounded-lg transition-all w-full md:w-auto">The Vision</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="about" class="py-24 bg-[#080808]">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-8 font-heading">Our Foundational <br><span class="text-blue-500">Innovation</span></h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        In an era of rapid digital evolution, standard paradigms are no longer sufficient. Raventek focuses on the intersection of deep mathematics and physical engineering to solve the world's most complex technical challenges.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="p-4 border-l-2 border-blue-600 bg-white/5">
+                            <div class="text-2xl font-bold text-white mb-1">99.9%</div>
+                            <div class="text-xs text-gray-500 uppercase tracking-widest">Quantum Fidelity</div>
+                        </div>
+                        <div class="p-4 border-l-2 border-blue-600 bg-white/5">
+                            <div class="text-2xl font-bold text-white mb-1">Zero</div>
+                            <div class="text-xs text-gray-500 uppercase tracking-widest">Knowledge Proofs</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="aspect-square glass rounded-2xl flex items-center justify-center overflow-hidden">
+                        <!-- SVG Abstract Tech Illustration -->
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full p-12 opacity-40">
+                            <path fill="#3b82f6" d="M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.4,-44.7C83.7,-31.3,87,-15.7,85.6,-0.8C84.2,14.1,78.1,28.2,69.5,41.2C60.9,54.2,49.8,66,36.5,73.5C23.2,81.1,7.6,84.4,-7.8,83.1C-23.2,81.8,-38.4,75.9,-51.4,66.6C-64.4,57.3,-75.2,44.7,-81.4,30.4C-87.6,16.1,-89.2,0.1,-86.3,-14.9C-83.4,-29.9,-75.9,-43.9,-64.8,-53.4C-53.7,-62.9,-38.9,-67.9,-25.1,-75.1C-11.3,-82.3,1.5,-91.7,14.9,-91C28.3,-90.3,44.7,-76.4Z" transform="translate(100 100)" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <span class="block text-4xl font-bold text-white mb-2">VISION 2030</span>
+                                <span class="text-blue-400 tracking-[0.3em] uppercase text-sm">Future Proofing Humanity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section id="specialties" class="py-24 border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 font-heading">Core Technological Pillars</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Cryptography -->
+                <div class="p-8 glass rounded-2xl card-hover">
+                    <div class="w-14 h-14 bg-blue-600/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-heading text-white">Advanced Cryptography</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Post-quantum encryption standards and lattice-based cryptographic solutions designed to protect global data infrastructure against future threats.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Homomorphic Encryption</li>
+                        <li>• Sovereign Identity Protocols</li>
+                        <li>• Elliptic Curve Evolution</li>
+                    </ul>
+                </div>
+
+                <!-- Quantum Computing -->
+                <div class="p-8 glass rounded-2xl card-hover border-blue-500/20">
+                    <div class="w-14 h-14 bg-blue-600/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-heading text-white">Quantum Computing</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Developing scalable qubit architectures and quantum-safe algorithms. We bridge the gap between theoretical physics and industrial application.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Error-Correction Research</li>
+                        <li>• Topological Qubit Theory</li>
+                        <li>• Quantum Algorithm Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Hardware -->
+                <div id="hardware" class="p-8 glass rounded-2xl card-hover">
+                    <div class="w-14 h-14 bg-blue-600/20 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-heading text-white">Next-Gen Hardware</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Silicon is reaching its limit. We engineer carbon-based nanostructures and photonic processors that outpace traditional semiconductors.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Photonic Integrated Circuits</li>
+                        <li>• Neuromorphic Chips</li>
+                        <li>• Low-Power High-Density Storage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto glass rounded-3xl overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-blue-600 p-12 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white mb-4 font-heading">Connect With Us</h2>
+                        <p class="text-blue-100 mb-8">Ready to bring vision to reality? Let's discuss your next breakthrough.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3 text-white">
+                            <span class="text-sm">innovate@raventek.io</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-white">
+                            <span class="text-sm">San Francisco • London • Tokyo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 p-12">
+                    <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-6" onsubmit="event.preventDefault(); document.getElementById('successMsg').classList.remove('hidden'); this.classList.add('hidden');">
+                        <div class="col-span-1">
+                            <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-bold">Name</label>
+                            <input type="text" placeholder="Your Name" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-blue-500 outline-none transition-all text-white">
+                        </div>
+                        <div class="col-span-1">
+                            <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-bold">Email</label>
+                            <input type="email" placeholder="email@address.com" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-blue-500 outline-none transition-all text-white">
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-bold">Area of Interest</label>
+                            <select class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-blue-500 outline-none transition-all text-white">
+                                <option>Cryptography Research</option>
+                                <option>Quantum Systems</option>
+                                <option>Hardware Solutions</option>
+                                <option>Partnership Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2 font-bold">Message</label>
+                            <textarea rows="4" placeholder="Your inquiry details..." class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:border-blue-500 outline-none transition-all text-white"></textarea>
+                        </div>
+                        <div class="col-span-2">
+                            <button type="submit" class="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg shadow-blue-900/20">Initialize Inquiry</button>
+                        </div>
+                    </form>
+                    <div id="successMsg" class="hidden text-center py-20">
+                        <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Transmission Received</h3>
+                        <p class="text-gray-400">Our visionaries will review your inquiry and respond within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 bg-[#030303]">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center space-x-2">
+                <div class="w-6 h-6 bg-blue-600 rounded-sm flex items-center justify-center rotate-45">
+                    <span class="text-white font-bold -rotate-45 text-xs">R</span>
+                </div>
+                <span class="text-lg font-bold tracking-tighter text-white font-heading">RAVENTEK</span>
+            </div>
+            <p class="text-gray-600 text-sm">© 2024 Raventek Systems. Pioneers of the New Age.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-500 hover:text-white transition-colors">Privacy</a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors">Documentation</a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors">Labs</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll reveal effect for nav
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'bg-black/80');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('py-2', 'bg-black/80');
+                nav.classList.add('py-4');
+            }
+        });
+    </script>
+
+</body>
+</html>
